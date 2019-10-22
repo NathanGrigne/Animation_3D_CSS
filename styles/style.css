@@ -208,3 +208,32 @@
     height: 95%;
     background: #ef991d;
 }
+
+/* NORMAL HIGH IN GOTHAM */
+
+.normal-height{
+    height: 250px;
+    width: 200px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.windows-container-normal-height{
+    display: flex;
+    justify-content: space-around;
+    height: 9%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.windows-normal-height{
+    height: 90%;
+    width: 10%;
+    background: #ef991d;
+}
