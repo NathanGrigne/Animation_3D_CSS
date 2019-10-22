@@ -1,0 +1,65 @@
+.batiment1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 800px;
+}
+
+.batiment1 *{
+    transform-style: preserve-3d;
+}
+
+.bottom-building{
+    position: absolute;
+    width: 160px;
+    height: 400px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.windows-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.windows{
+    width: 16px;
+    height: 95%;
+    background: yellow; 
+    margin: 4px;
+}
+
+.top-wall-building{
+    height: 40px;
+    width: 160px;
+    background: #000;
+    position: absolute;
+    top: -50px;
+}
+
+.windows-container-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.windows-top{
+    width: 16px;
+    height: 20px;
+    background: yellow; 
+    margin: 4px;
+}
+
+.top-building{
+    position: absolute;
+    top:-270px;
+    height : 0;
+    width : 0;
+    border-right : 80px solid transparent;
+    border-bottom : 220px solid #000;
+    border-left : 80px solid transparent;
+   }
