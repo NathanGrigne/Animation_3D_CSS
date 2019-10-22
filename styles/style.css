@@ -1,65 +1,97 @@
-.batiment1{
+.buildings{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    perspective: 800px;
+    bottom: 10px;
 }
 
-.batiment1 *{
-    transform-style: preserve-3d;
-}
-
-.bottom-building{
+.high{
     position: absolute;
-    width: 160px;
-    height: 400px;
+    bottom: 0;
+    height: 300px;
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.windows-container{
-    display: flex;
-    align-items: center;
-    height: 100%;
+.bar-top-high-building{
+    position: absolute;
+    top: -210px;
+    height: 30px;
+    width: 2px;
+    background: #000;
 }
 
-.windows{
-    width: 16px;
-    height: 95%;
-    background: yellow; 
-    margin: 4px;
+.top-high-building{
+    position: absolute;
+    top: -190px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 65px 150px 65px;
+    border-color: transparent transparent #000 transparent;
 }
 
-.top-wall-building{
+.window-top-high-building{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 12.5px 30px 12.5px;
+    border-color: transparent transparent #C77A5B transparent; 
+    position: absolute;
+    top: 90px;
+    right: -10px;
+}
+
+.wall-top-high-building{
+    width: 130px;
     height: 40px;
-    width: 160px;
     background: #000;
     position: absolute;
-    top: -50px;
-}
-
-.windows-container-top{
+    top: -40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.windows-top{
-    width: 16px;
-    height: 20px;
-    background: yellow; 
-    margin: 4px;
+.windows-wall-top-high-building{
+    width: 10%;
+    height: 70%;
+    background: #C77A5B;
 }
 
-.top-building{
+.bar-bottom-high-building{
+    width: 2px;
+    height: 15px;
+    background: #000;
+}
+
+.bar-left-bottom-high-building{
     position: absolute;
-    top:-270px;
-    height : 0;
-    width : 0;
-    border-right : 80px solid transparent;
-    border-bottom : 220px solid #000;
-    border-left : 80px solid transparent;
-   }
+    top: -15px;
+    left: 1px;
+}
+
+.bar-right-bottom-high-building{
+    position: absolute;
+    top: -15px;
+    right: 1px;
+}
+
+.bottom-high-building{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.bottom-high-building .windows-high{
+    width: 10%;
+    height: 98%;
+    background: #C77A5B;
+}
