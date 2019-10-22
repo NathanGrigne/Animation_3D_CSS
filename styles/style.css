@@ -1,9 +1,13 @@
+/* color light in building : ef991d */
+
 .buildings{
     position: absolute;
     bottom: 10px;
 }
 
-.high{
+/* HIGHEST BUILDING IN GOTHAM */
+
+.highest{
     position: absolute;
     bottom: 0;
     height: 300px;
@@ -14,7 +18,7 @@
     background: #000;
 }
 
-.bar-top-high-building{
+.bar-top-highest-building{
     position: absolute;
     top: -210px;
     height: 30px;
@@ -22,7 +26,7 @@
     background: #000;
 }
 
-.top-high-building{
+.top-highest-building{
     position: absolute;
     top: -190px;
     width: 0;
@@ -32,18 +36,36 @@
     border-color: transparent transparent #000 transparent;
 }
 
-.window-top-high-building{
+.window-top-highest-building{
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 12.5px 30px 12.5px;
-    border-color: transparent transparent #C77A5B transparent; 
+    border-color: transparent transparent #ef991d transparent; 
     position: absolute;
     top: 90px;
     right: -10px;
 }
 
-.wall-top-high-building{
+.bar-top-wall-highest-building {
+    height: 30px;
+    width: 2px;
+    background: #000;
+}
+
+.bar-left-top-wall-highest-building{
+    position: absolute;
+    top: -70px;
+    left: 21px;
+}
+
+.bar-right-top-wall-highest-building{
+    position: absolute;
+    top: -70px;
+    right: 21px;
+}
+
+.wall-top-highest-building{
     width: 130px;
     height: 40px;
     background: #000;
@@ -56,31 +78,31 @@
     box-sizing: border-box;
 }
 
-.windows-wall-top-high-building{
+.windows-wall-top-highest-building{
     width: 10%;
     height: 70%;
-    background: #C77A5B;
+    background: #ef991d;
 }
 
-.bar-bottom-high-building{
+.bar-bottom-highest-building{
     width: 2px;
     height: 15px;
     background: #000;
 }
 
-.bar-left-bottom-high-building{
+.bar-left-bottom-highest-building{
     position: absolute;
     top: -15px;
     left: 1px;
 }
 
-.bar-right-bottom-high-building{
+.bar-right-bottom-highest-building{
     position: absolute;
     top: -15px;
     right: 1px;
 }
 
-.bottom-high-building{
+.bottom-highest-building{
     height: 100%;
     width: 100%;
     display: flex;
@@ -90,8 +112,99 @@
     box-sizing: border-box;
 }
 
-.bottom-high-building .windows-high{
+.windows-highest{
     width: 10%;
     height: 98%;
-    background: #C77A5B;
+    background: #ef991d;
+}
+
+/* HIGH BUILDING IN GOTHAM */
+
+.high{
+    height: 200px;
+    width: 170px;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+
+.top-high-building{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 85px 60px 85px;
+    border-color: transparent transparent #000 transparent;
+    position: absolute;
+    top: -140px;
+}
+
+.middle-high-building{
+    width: 170px;
+    height: 80px;
+    background: #000;
+    position: absolute;
+    top: -80px;
+}
+
+.top-middle-high{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.windows-top-middle-high{
+    height: 70%;
+    width: 6%;
+    background: #ef991d;
+}
+
+.middle-middle-high{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+}
+
+.windows-middle-middle-high{
+    height: 80%;
+    width: 7%;
+    background: #ef991d;
+}
+
+.bottom-middle-high{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.windows-bottom-middle-high{
+    height: 70%;
+    width: 6%;
+    background: #ef991d;
+}
+
+.bottom-high-building{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.windows-high{
+    width: 7%;
+    height: 95%;
+    background: #ef991d;
 }
