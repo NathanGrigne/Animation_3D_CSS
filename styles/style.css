@@ -254,12 +254,18 @@
     width: 300px;
     height: 100px;
     border: 2px solid #000;
+    position: relative;
 }
 
 /* Front Batmobile */
 
+.front-batmobile{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .top-front-batmobile{
-    display : inline-block;
     height : 0;
     width : 0;
     border-right : 50px solid transparent;
@@ -270,7 +276,6 @@
     width: 52px;
     height: 20px;
     background: #2A2318;
-    margin-top: -4px;
     margin-left: -1px;
     border-radius: 2px;
 }
@@ -287,6 +292,9 @@
     display: flex;
     justify-content: center;
     background: #2A2318;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
 }
 
 .front-wheel-batmobile{
@@ -311,12 +319,32 @@
     background: #312f2b;
 }
 
+.between-wheels{
+    width: 140px;
+    height: 40px;
+    background: #2A2318;
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+}
+
+.around-back-wheel{
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background: #2A2318;
+    position: absolute;
+    bottom: 0;
+}
+
 
 .back-wheel-batmobile{
     height: 50px;
     width: 50px;
     border-radius: 50%;
     background: #312f2b;
+    margin-top: 2px;
 }
 
 .interior-back-wheel{
