@@ -274,6 +274,15 @@
 
 /* Front Batmobile */
 
+.light-front-batmobile{
+    width: 2px;
+    height: 10px;
+    background: yellow;
+    position: absolute;
+    right: -2px;
+    bottom: 7px;
+}
+
 .front-batmobile{
     position: absolute;
     bottom: 0;
@@ -295,12 +304,90 @@
     border-radius: 2px;
 }
 
-/* Wheels */
-
-.wheels-batmobile{
-    display: flex;
+.smooth-wall-batmobile{
+    height : 0;
+    width : 0;
+    border-right : 33px solid transparent;
+    border-bottom : 3px solid #2A2318;
+    position: absolute;
+    left: 167px;
+    bottom: 35px;
 }
 
+.wall-between-wheels-batmobile{
+    width: 33px;
+    height: 35px;
+    background: #2A2318;
+    position: absolute;
+    left: 167px;
+    bottom: 0;
+}
+
+/* Roof Batmobile */
+
+.roof-batmobile{
+    height: 30px;
+    width: 70px;
+    background: #2A2318;
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+    transform: rotate(10deg);
+}
+
+.window-batmobile{
+    width: 50px;
+    height: 12px;
+    border-radius: 10px;
+    background: grey;
+    position: absolute;
+    left: 15px;
+    bottom: 13px;
+}
+
+.border-window-batmobile{
+    width: 10px;
+    height: 16px;
+    background: #2A2318;
+    position: absolute;
+    left: 60px;
+    bottom: 12px;
+    transform: rotate(-10deg);
+}
+
+.roof-left-batmobile{
+    height : 0;
+    width : 0;
+    border-bottom : 15px solid #2A2318;
+    border-left : 25px solid transparent;
+    position: absolute;
+    bottom: 54px;
+    left: 58px;
+    transform: rotate(10deg);
+}
+
+.roof-right-batmobile{
+    height : 0;
+    width : 0;
+    border-right : 20px solid transparent;
+    border-bottom : 16px solid #2A2318;
+    position: absolute;
+    left: 150px;
+    bottom: 36px;
+    transform: rotate(10deg);
+}
+
+.window-circle-batmobile{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: grey;
+    position: absolute;
+    bottom: 52px;
+    left: 80px;
+}
+
+/* Wheels */
 .wheels{
     margin-top: 10px;
 }
@@ -337,9 +424,16 @@
     background: #312f2b;
 }
 
+.interior-front-wheel2 img{
+    width: 13px;
+    height: auto;
+    position: absolute;
+    bottom: -5px;
+}
+
 .between-wheels{
-    width: 110px;
-    height: 40px;
+    width: 77px;
+    height: 38px;
     background: #2A2318;
     position: absolute;
     left: 90px;
@@ -366,20 +460,36 @@
 }
 
 .interior-back-wheel{
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     background: #000;
 }
 
 .interior-back-wheel2{
-    height: 15px;
-    width: 15px;
+    height: 17px;
+    width: 17px;
     border-radius: 50%;
     background: #312f2b;
 }
 
+.interior-back-wheel2 img{
+    width: 16px;
+    height: auto;
+    position: absolute;
+    bottom: -5px;
+}
+
 /* Back Batmobile */
+
+.wall-batmobile{
+    width: 40px;
+    height: 20px;
+    background: #2A2318;
+    position: absolute;
+    left: 41px;
+    bottom: 35px;
+}
 
 .spoiler-back-batmobile{
     height : 0;
@@ -390,6 +500,44 @@
     bottom: 40px;
     left: 0;
     transform: rotate(-20deg);
+}
+
+.triangle-spoiler{
+    height : 0;
+    width : 0;
+    border-top : 5px solid transparent;
+    border-right : 5px solid #2A2318;
+    border-bottom : 5px solid transparent;
+    transform: rotate(-20deg);
+}
+
+.triangle-spoiler1{
+    position: absolute;
+    left: 4px;
+    bottom: 30px;
+}
+
+.triangle-spoiler2{
+    position: absolute;
+    left: -1px;
+    bottom: 42px;
+}
+
+.triangle-spoiler3{
+    position: absolute;
+    left: -6px;
+    bottom: 56px;
+}
+
+.triangle-spoiler4{
+    height : 0;
+    width : 0;
+    border-right : 5px solid #2A2318;
+    border-bottom : 5px solid transparent;
+    transform: rotate(-20deg);
+    position: absolute;
+    bottom: 69px;
+    left: -9px;
 }
 
 .back-batmobile{
@@ -405,11 +553,12 @@
 
 .back-bottom-batmobile{
     height: 20px;
-    width: 25px;
+    width: 26px;
     background: #2A2318;
     position: absolute;
     bottom: 0;
-    left: 7px;
+    left: 8px;
+    border-radius: 5px;
 }
 
 .light-back-batmobile{
