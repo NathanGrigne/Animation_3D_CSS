@@ -8,6 +8,17 @@
     align-items: center;
 }
 
+.hideBuildings{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.hideBatmobile{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
 /* color light in building : ef991d */
 
 .buildings{
