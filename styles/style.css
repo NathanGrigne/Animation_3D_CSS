@@ -258,10 +258,21 @@
 
 /* Front Batmobile */
 
-.front-batmobile{
-    width: 60px;
-    height: 35px;
+.top-front-batmobile{
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 50px solid transparent;
+    border-bottom : 15px solid #2A2318;
+}
+
+.bottom-front-batmobile{
+    width: 52px;
+    height: 20px;
     background: #2A2318;
+    margin-top: -4px;
+    margin-left: -1px;
+    border-radius: 2px;
 }
 
 /* Wheels */
@@ -282,7 +293,7 @@
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    background: grey;
+    background: #312f2b;
     margin-top: 2px;
 }
 
@@ -297,7 +308,7 @@
     height: 13px;
     width: 13px;
     border-radius: 50%;
-    background: grey;
+    background: #312f2b;
 }
 
 
@@ -305,7 +316,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background: grey;
+    background: #312f2b;
 }
 
 .interior-back-wheel{
@@ -319,5 +330,5 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background: grey;
+    background: #312f2b;
 }
