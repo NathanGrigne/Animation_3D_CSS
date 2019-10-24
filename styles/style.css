@@ -1221,3 +1221,62 @@ body{
     position: absolute;
 
 }
+
+/* Equalizer */
+
+.equalizer{
+    --width: 7px;
+    --height: 30px;
+    position: absolute;
+    bottom: 25px;
+    right: 40px;
+}
+
+.equalizer:hover{
+    cursor: pointer;
+}
+
+.equalizer .bar{
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    margin-top: calc(var(--height)/-2);
+    margin-left: calc(var(--width)/-2);
+    background: #FFF;
+    animation-fill-mode: both;
+
+    animation-name: equalizer-bar;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes equalizer-bar{
+    0% {transform: scaleY(0.2);}
+    10% {transform: scaleY(1);}
+    100% {transform: scaleY(0.2);}
+}
+
+.equalizer .bar-0{
+    animation-delay: 0.2s;
+    left: calc(var(--width) * -3);
+}
+
+.equalizer .bar-1{
+    animation-delay: 0.1s;
+    left: calc(var(--width) * -1.5);
+}
+
+.equalizer .bar-2{
+    animation-delay: 0.2s;
+    left: calc(var(--width) * 0);
+}
+
+.equalizer .bar-3{
+    animation-delay: 0.1s;
+    left: calc(var(--width) * 1.5);
+}
+
+.equalizer .bar-4{
+    animation-delay: 0.2s;
+    left: calc(var(--width) * 3);
+}

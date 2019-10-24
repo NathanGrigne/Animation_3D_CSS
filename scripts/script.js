@@ -69,12 +69,36 @@ openMenu.addEventListener('click',function(){
 
 const hideBatSignal = document.querySelector('.moon')
 const batSignal = document.querySelector('.bat-signal')
+const soundBatSignal = document.querySelector('.sound-bat-signal')
 
 moon.addEventListener('click',function(){
     if(batSignal.classList.contains('hide')){
         batSignal.classList.remove('hide')
+        soundBatSignal.play()
     }
     else{
         batSignal.classList.add('hide')
+    }
+})
+
+const soundBatmobile = document.querySelector('.sound-batmobile')
+
+batmobile.addEventListener('click',function(){
+    soundBatmobile.play()
+    soundBatmobile.volume = 0.5
+})
+
+const equalizer = document.querySelector('.equalizer')
+const themeBatman = document.querySelector('.theme-batman')
+let musicStatus = false
+
+equalizer.addEventListener('click',function(){
+    if(musicStatus == false){
+        themeBatman.play()
+        musicStatus = true
+    }
+    else{
+        themeBatman.pause()
+        musicStatus = false
     }
 })
