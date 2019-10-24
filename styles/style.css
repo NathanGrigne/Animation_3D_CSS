@@ -1,3 +1,10 @@
+body{
+    background: linear-gradient(#191970, #000);
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .hide{
     display: none;
 }
@@ -48,18 +55,21 @@
     height: 0;
     border-style: solid;
     border-width: 30px 20px 30px 0;
-    border-color: transparent #000 transparent transparent;
+    border-color: transparent #191970 transparent transparent;
     position: absolute;
     bottom: 10px;
     left: -20px;
 }
 
 .close-menu{
-    font-size: 50px;
-    color: #FFF;
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+.close-menu img{
+    width: 48px;
+    height: auto;
 }
 
 /* color light in building : ef991d */
@@ -307,7 +317,6 @@
 .batmobile{
     width: 300px;
     height: 100px;
-    border: 2px solid #000;
     position: relative;
 }
 
@@ -468,8 +477,9 @@
     margin-top: 10px;
 
     animation-name: rollWheels;
-    animation-duration: 1s;
+    animation-duration: 400ms;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* Animation Wheels */
@@ -752,26 +762,108 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: grey;
+    background: #A2A2A2;
     position: relative;
 }
 
 .moon-dot0{
-    width: 30px;
-    height: 33px;
+    width: 7px;
+    height: 5px;
     border-radius: 50%;
-    background: #000;
+    background: #C4C4C4;
     position: absolute;
-    bottom: 15px;
-    right: 20px;
+    top: 15px;
+    left: 25px;
 }
 
 .moon-dot1{
     width: 15px;
     height: 12px;
     border-radius: 50%;
-    background: #000;
+    background: #C4C4C4;
     position: absolute;
-    top: 15px;
-    right: 40px;
+    top: 12px;
+    left: 50px;
+}
+
+.moon-dot2{
+    width: 7px;
+    height: 5px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+.moon-dot3{
+    width: 7px;
+    height: 5px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    position: absolute;
+    bottom: 15px;
+    left: 27px;
+}
+
+.moon-dot4{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    position: absolute;
+    bottom: 42px;
+    left: 35px;
+}
+
+.moon-dot5{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.moon-dot6{
+    width: 7px;
+    height: 9px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+}
+
+.moon-dot7{
+    width: 9px;
+    height: 8px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.moon-dot8{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    position: absolute;
+    top: 32px;
+    right: 15px;
+}
+
+/* Cloud */
+
+.cloud-container img{
+    width: 150px;
+    height: auto;
+}
+
+.cloud1{
+    position: absolute;
+    top: 0;
 }
