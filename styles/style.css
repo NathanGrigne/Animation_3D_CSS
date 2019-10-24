@@ -1174,3 +1174,33 @@ body{
     background: #FFF;
     margin: 30px;
 }
+
+/* Bat Signal */
+
+.bat-signal img{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 15%;
+    top: 125px;
+    animation-name: bat-signal-moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bat-signal-moving{
+    50%{transform: translateY(10px)};
+}
+
+.light-bat-signal{
+    height : 0;
+    width : 0;
+    border-right : 47px solid transparent;
+    border-bottom : 500px solid #FFF;
+    border-left : 53px solid transparent;
+    opacity: 0.4;
+    transform: rotate(160deg);
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}

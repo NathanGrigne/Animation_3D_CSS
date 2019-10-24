@@ -58,3 +58,15 @@ openMenu.addEventListener('click',function(){
 closeMenu.addEventListener('click',function(){
     navigation.classList.remove('is-appear')
 })
+
+const hideBatSignal = document.querySelector('.moon')
+const batSignal = document.querySelector('.bat-signal')
+
+moon.addEventListener('click',function(){
+    if(batSignal.classList.contains('hide')){
+        batSignal.classList.remove('hide')
+    }
+    else{
+        batSignal.classList.add('hide')
+    }
+})
