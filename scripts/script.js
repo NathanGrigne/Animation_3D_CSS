@@ -22,3 +22,15 @@ buttonBatmobile.addEventListener('click',function(){
         batmobile.classList.add('hide')
     }
 })
+
+const openMenu = document.querySelector('.open-menu')
+const closeMenu = document.querySelector('.close-menu')
+const navigation = document.querySelector('.navigation')
+
+openMenu.addEventListener('click',function(){
+    navigation.classList.add('is-appear')
+})
+
+closeMenu.addEventListener('click',function(){
+    navigation.classList.remove('is-appear')
+})
