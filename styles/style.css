@@ -90,6 +90,42 @@ body{
     background: #000;
 }
 
+.highest-5{
+    position: absolute;
+    left: 860px;
+    bottom: 0;
+    height: 300px;
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+}
+
+.highest-7{
+    position: absolute;
+    left: 1260px;
+    bottom: 0;
+    height: 300px;
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+}
+
+.highest-8{
+    position: absolute;
+    left: 1460px;
+    bottom: 0;
+    height: 300px;
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+}
+
 .bar-top-highest-building{
     position: absolute;
     top: -210px;
@@ -200,6 +236,14 @@ body{
     left: 200px;
 }
 
+.high-6{
+    height: 200px;
+    width: 170px;
+    position: absolute;
+    bottom: 0;
+    left: 1060px;
+}
+
 .top-high-building{
     width: 0;
     height: 0;
@@ -290,6 +334,18 @@ body{
     position: absolute;
     bottom: 0;
     left: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.normal-height-4{
+    height: 250px;
+    width: 200px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 630px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -400,6 +456,7 @@ body{
     background: #2A2318;
     margin-left: -1px;
     border-radius: 2px;
+    border-bottom: 1px solid #000;
 }
 
 .smooth-wall-batmobile{
@@ -419,6 +476,7 @@ body{
     position: absolute;
     left: 166px;
     bottom: 0;
+    border-bottom: 1px solid #000;
 }
 
 /* Roof Batmobile */
@@ -441,6 +499,7 @@ body{
     position: absolute;
     left: 15px;
     bottom: 13px;
+    border: 1px solid #000;
 }
 
 .border-window-batmobile{
@@ -451,6 +510,7 @@ body{
     left: 60px;
     bottom: 12px;
     transform: rotate(-10deg);
+    border-left: 1px solid #000;
 }
 
 .roof-left-batmobile{
@@ -483,6 +543,7 @@ body{
     position: absolute;
     bottom: 52px;
     left: 80px;
+    border: 1px solid #000;
 }
 
 
@@ -512,6 +573,8 @@ body{
     position: absolute;
     bottom: 0;
     right: 50px;
+    border-top: #000 solid 1px;
+    border-bottom: #000 solid 1px;
 }
 
 .front-wheel-batmobile{
@@ -519,6 +582,7 @@ body{
     width: 45px;
     border-radius: 50%;
     background: #312f2b;
+    border: 1px solid #000;
 }
 
 .interior-front-wheel{
@@ -547,6 +611,7 @@ body{
     position: absolute;
     left: 89px;
     bottom: 0;
+    border-bottom: 1px solid #000;
 }
 
 .around-back-wheel{
@@ -558,6 +623,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 30px;
+    border-bottom: 1px solid #000;
 }
 
 
@@ -566,6 +632,7 @@ body{
     width: 50px;
     border-radius: 50%;
     background: #312f2b;
+    border: 1px solid #000;
 }
 
 .interior-back-wheel{
@@ -708,6 +775,7 @@ body{
     left: 13px;
     transform: rotate(60deg);
     border-radius: 50%;
+    border: 1px solid #000;
 }
 
 .back-bottom-batmobile{
@@ -718,6 +786,8 @@ body{
     bottom: 0;
     left: 8px;
     border-radius: 5px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
 }
 
 .light-back-batmobile{
@@ -769,6 +839,84 @@ body{
     position: absolute;
     left: 10px;
     bottom: 35px;
+}
+
+/* Border Batmobile */
+
+.border-batmobile-preset{
+    height: 1px;
+    background: #000;
+}
+
+.border-1{
+    width: 72px;
+    transform : rotate(10deg);
+    position: absolute;
+    bottom: 9px;
+    left: 82px;
+}
+
+.border-2{
+    width: 20px;
+    transform : rotate(50deg);
+    position: absolute;
+    bottom: -5px;
+    left: 149px;
+}
+
+.border-3{
+    width: 50px;
+    transform: rotate(25deg);
+    position: absolute;
+    bottom: -1px;
+    left: 62px;
+}
+
+.border-4{
+    width: 40px;
+    position: absolute;
+    bottom: -12.5px;
+    left: 125px;
+}
+
+.border-5{
+    width: 17px;
+    position: absolute;
+    transform: rotate(4deg);
+    bottom: -12px;
+    left: 109px;
+}
+
+.border-6{
+    width: 19px;
+    position: absolute;
+    transform: rotate(-20deg);
+    bottom: 12px;
+    left: 64px;
+}
+
+.border-7{
+    width: 73px;
+    position: absolute;
+    transform: rotate(12deg);
+    bottom: 17px;
+    left: -6px;
+}
+
+.border-8{
+    width: 53px;
+    position: absolute;
+    transform: rotate(17deg);
+    bottom: -22px;
+    right: 0;
+}
+
+.border-9{
+    width: 35px;
+    position: absolute;
+    transform: rotate(3deg);
+    bottom: -13px;
+    left: 165px;
 }
 
 .smoke-1{
