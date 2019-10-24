@@ -989,6 +989,10 @@ body{
     left: 10px;
 }
 
+.moon:hover{
+    cursor: pointer;
+}
+
 .moon-container{
     width: 100px;
     height: 100px;
@@ -1181,11 +1185,17 @@ body{
     width: 150px;
     height: auto;
     position: absolute;
-    right: 15%;
-    top: 125px;
+    top: -30px;
+    left: -110px;
     animation-name: bat-signal-moving;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+
+.bat-signal-constructor{
+    position: absolute;
+    right: 100px;
+    top: 200px;
 }
 
 @keyframes bat-signal-moving{
@@ -1201,6 +1211,5 @@ body{
     opacity: 0.4;
     transform: rotate(160deg);
     position: absolute;
-    bottom: 15%;
-    right: 10%;
+
 }
