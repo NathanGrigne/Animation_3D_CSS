@@ -4,6 +4,9 @@ const buildings = document.querySelector('.buildings')
 const buttonBatmobile = document.querySelector('.hideBatmobile')
 const batmobile = document.querySelector('.batmobile')
 
+const buttonMoon = document.querySelector('.hideMoon')
+const moon = document.querySelector('.moon')
+
 buttonBuildings.addEventListener('click',function(){
     if(buildings.classList.contains('hide')){
         buildings.classList.remove('hide')
@@ -20,6 +23,15 @@ buttonBatmobile.addEventListener('click',function(){
     }
     else{
         batmobile.classList.add('hide')
+    }
+})
+
+buttonMoon.addEventListener('click',function(){
+    if(moon.classList.contains('hide')){
+        moon.classList.remove('hide')
+    }
+    else{
+        moon.classList.add('hide')
     }
 })
 
