@@ -75,17 +75,16 @@ moon.addEventListener('click',function(){
     if(batSignal.classList.contains('hide')){
         batSignal.classList.remove('hide')
         soundBatSignal.play()
+        soundBatmobile.volume = 0.5
+        for(let i = 0; i < barEqualizer.length; i++){
+            barEqualizer[i].classList.remove('equalizer-animation')
+        }
+        musicStatus = false
+        themeBatman.pause()
     }
     else{
         batSignal.classList.add('hide')
     }
-})
-
-const soundBatmobile = document.querySelector('.sound-batmobile')
-
-batmobile.addEventListener('click',function(){
-    soundBatmobile.play()
-    soundBatmobile.volume = 0.5
 })
 
 const equalizer = document.querySelector('.equalizer')
@@ -108,4 +107,16 @@ equalizer.addEventListener('click',function(){
         themeBatman.pause()
         musicStatus = false
     }
+})
+
+const soundBatmobile = document.querySelector('.sound-batmobile')
+
+batmobile.addEventListener('click',function(){
+    soundBatmobile.play()
+    soundBatmobile.volume = 0.5
+    for(let i = 0; i < barEqualizer.length; i++){
+        barEqualizer[i].classList.remove('equalizer-animation')
+    }
+    musicStatus = false
+    themeBatman.pause()
 })

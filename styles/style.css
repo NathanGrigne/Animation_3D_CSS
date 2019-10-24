@@ -491,7 +491,7 @@ body{
     width: 50px;
     height: 12px;
     border-radius: 10px;
-    background: grey;
+    background: rgb(75, 75, 75);
     position: absolute;
     left: 15px;
     bottom: 13px;
@@ -535,7 +535,7 @@ body{
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: grey;
+    background: rgb(75, 75, 75);
     position: absolute;
     bottom: 52px;
     left: 80px;
