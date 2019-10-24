@@ -1,8 +1,9 @@
 body{
-    background: linear-gradient(#191970, #000);
+    background: linear-gradient(#191970, #2A2A2A);
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
+    margin: 0;
 }
 
 .hide{
@@ -55,9 +56,9 @@ body{
     height: 0;
     border-style: solid;
     border-width: 30px 20px 30px 0;
-    border-color: transparent #191970 transparent transparent;
+    border-color: transparent #FFF transparent transparent;
     position: absolute;
-    bottom: 10px;
+    top: 10px;
     left: -20px;
 }
 
@@ -76,7 +77,7 @@ body{
 
 .buildings{
     position: absolute;
-    bottom: 10px;
+    bottom: 200px;
 }
 
 /* HIGHEST BUILDING IN GOTHAM */
@@ -315,9 +316,16 @@ body{
 /* BATMOBILE */
 
 .batmobile{
+    position: absolute;
+    bottom: 180px;
+    left: 10px;
+}
+
+.batmobile-construct{
     width: 300px;
     height: 100px;
     position: relative;
+    top: 50px;
 }
 
 /* Wind Hole Batmobile Front */
@@ -766,6 +774,12 @@ body{
     position: relative;
 }
 
+.moon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 .moon-dot0{
     width: 7px;
     height: 5px;
@@ -865,5 +879,54 @@ body{
 
 .cloud1{
     position: absolute;
-    top: 0;
+    top: 50px;
+    left: 150px;
+}
+
+.cloud2{
+    position: absolute;
+    top: 50px;
+    left: 320px;
+}
+
+.cloud3{
+    position: absolute;
+    top: 50px;
+    left: 490px;
+}
+
+.cloud4{
+    position: absolute;
+    top: 50px;
+    left: 660px;
+}
+
+.cloud5{
+    position: absolute;
+    top: 50px;
+    left: 830px;
+}
+
+/* Road */
+
+.road{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.road-container{
+    width: 100vw;
+    height: 200px;
+    background : #5E5F5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.road-line{
+    width: 30px;
+    height: 5px;
+    background: #FFF;
+    margin: 30px;
 }

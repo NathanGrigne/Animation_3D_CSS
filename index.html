@@ -9,17 +9,20 @@
     <title>Animation 3D CSS</title>
 </head>
 <body>
-    <!--MENU-->
-    <nav class="navigation ">
-        <div class="button-hide">
-            <button type="button" class="hideBuildings hideButton">Hide Buildings</button>
-            <button type="button" class="hideBatmobile hideButton">Hide Batmobile</button>
-            <button type="button" class="hideMoon hideButton">Hide Moon</button>
-            <button type="button" class="hideCloud hideButton">Hide Cloud</button>
+    <!-- Moon Construct -->
+    <div class="moon hide">
+        <div class="moon-container">
+            <div class="moon-dot0"></div>
+            <div class="moon-dot1"></div>
+            <div class="moon-dot2"></div>
+            <div class="moon-dot3"></div>
+            <div class="moon-dot4"></div>
+            <div class="moon-dot5"></div>
+            <div class="moon-dot6"></div>
+            <div class="moon-dot7"></div>
+            <div class="moon-dot8"></div>
         </div>
-        <div class="open-menu"></div>
-        <div class="close-menu"><img src="images/closeMenu.png" alt="close menu"></div>
-    </nav>
+    </div>
     <!-- BUILDINGS CONSTRUCT -->
     <div class="buildings hide">
         <div class="highest">
@@ -144,20 +147,6 @@
             </div>
         </div>
     </div>
-    <!-- Moon Construct -->
-    <div class="moon">
-        <div class="moon-container">
-            <div class="moon-dot0"></div>
-            <div class="moon-dot1"></div>
-            <div class="moon-dot2"></div>
-            <div class="moon-dot3"></div>
-            <div class="moon-dot4"></div>
-            <div class="moon-dot5"></div>
-            <div class="moon-dot6"></div>
-            <div class="moon-dot7"></div>
-            <div class="moon-dot8"></div>
-        </div>
-    </div>
     <!-- Clouds -->
     <div class="clouds">
         <div class="cloud-container">
@@ -169,69 +158,101 @@
         </div>
     </div>
     <!-- Road Construct -->
-
-    <!-- BATMOBILE CONSTRUCT -->
-    <div class="batmobile hide">
-        <div class="triangles-spoiler-batmobile">
-            <div class="triangle-spoiler triangle-spoiler1"></div>
-            <div class="triangle-spoiler triangle-spoiler2"></div>
-            <div class="triangle-spoiler triangle-spoiler3"></div>
-            <div class="triangle-spoiler4"></div>
-        </div>
-        <div class="spoiler-back-batmobile"></div>
-        <div class="light-back-batmobile"></div>
-        <div class="back-batmobile"></div>
-        <div class="back-bottom-batmobile"></div>
-        <div class="wall-batmobile"></div>
-        <div class="roof-left-batmobile"></div>
-        <div class="roof-right-batmobile"></div>
-        <div class="roof-batmobile">
-            <div class="window-batmobile"></div>
-            <div class="border-window-batmobile"></div>
-        </div>
-        <div class="window-circle-batmobile"></div>
-        <div class="wall-between-wheels-batmobile"></div>
-        <div class="smooth-wall-batmobile"></div>
-        <div class="wheels-batmobile">
-            <div class="around-back-wheel">
-                <div class="back-wheel-batmobile flex-center wheels">
-                    <div class="interior-back-wheel flex-center">
-                        <div class="interior-back-wheel2">
-                            <img src="images/logoBatman.png" alt="logo Batman">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="between-wheels"></div>
-            <div class="around-front-wheel">
-                <div class="front-wheel-batmobile flex-center wheels">
-                    <div class="interior-front-wheel flex-center">
-                        <div class="interior-front-wheel2">
-                            <img src="images/logoBatman.png" alt="logo Batman">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="front-batmobile">
-                <div class="top-front-batmobile"></div>
-                <div class="bottom-front-batmobile"></div>
-            </div>
-            <div class="light-front-batmobile"></div>
-            <div class="wind-hole-front-batmobile0"></div>
-            <div class="wind-hole-front-batmobile1"></div>
-            <div class="wind-hole-front-batmobile2"></div>
-
-            <div class="wind-hole-back-batmobile0"></div>
-            <div class="wind-hole-back-batmobile1"></div>
-            <div class="wind-hole-back-batmobile2"></div>
-            <div class="wind-hole-back-batmobile3"></div>
-            <div class="wind-hole-back-batmobile4"></div>
-            <div class="light-effect-spoiler0"></div>
-            <div class="light-effect-spoiler1"></div>
-            <div class="light-effect-spoiler2"></div>
-            <div class="light-effect-spoiler3"></div>
+    <div class="road">
+        <div class="road-container">
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
+            <div class="road-line"></div>
         </div>
     </div>
+    <!-- BATMOBILE CONSTRUCT -->
+    <div class="batmobile hide">
+        <div class="batmobile-construct">
+            <div class="triangles-spoiler-batmobile">
+                <div class="triangle-spoiler triangle-spoiler1"></div>
+                <div class="triangle-spoiler triangle-spoiler2"></div>
+                <div class="triangle-spoiler triangle-spoiler3"></div>
+                <div class="triangle-spoiler4"></div>
+            </div>
+            <div class="spoiler-back-batmobile"></div>
+            <div class="light-back-batmobile"></div>
+            <div class="back-batmobile"></div>
+            <div class="back-bottom-batmobile"></div>
+            <div class="wall-batmobile"></div>
+            <div class="roof-left-batmobile"></div>
+            <div class="roof-right-batmobile"></div>
+            <div class="roof-batmobile">
+                <div class="window-batmobile"></div>
+                <div class="border-window-batmobile"></div>
+            </div>
+            <div class="window-circle-batmobile"></div>
+            <div class="wall-between-wheels-batmobile"></div>
+            <div class="smooth-wall-batmobile"></div>
+            <div class="wheels-batmobile">
+                <div class="around-back-wheel">
+                    <div class="back-wheel-batmobile flex-center wheels">
+                        <div class="interior-back-wheel flex-center">
+                            <div class="interior-back-wheel2">
+                                <img src="images/logoBatman.png" alt="logo Batman">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="between-wheels"></div>
+                <div class="around-front-wheel">
+                    <div class="front-wheel-batmobile flex-center wheels">
+                        <div class="interior-front-wheel flex-center">
+                            <div class="interior-front-wheel2">
+                                <img src="images/logoBatman.png" alt="logo Batman">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-batmobile">
+                    <div class="top-front-batmobile"></div>
+                    <div class="bottom-front-batmobile"></div>
+                </div>
+                <div class="light-front-batmobile"></div>
+                <div class="wind-hole-front-batmobile0"></div>
+                <div class="wind-hole-front-batmobile1"></div>
+                <div class="wind-hole-front-batmobile2"></div>
+
+                <div class="wind-hole-back-batmobile0"></div>
+                <div class="wind-hole-back-batmobile1"></div>
+                <div class="wind-hole-back-batmobile2"></div>
+                <div class="wind-hole-back-batmobile3"></div>
+                <div class="wind-hole-back-batmobile4"></div>
+                <div class="light-effect-spoiler0"></div>
+                <div class="light-effect-spoiler1"></div>
+                <div class="light-effect-spoiler2"></div>
+                <div class="light-effect-spoiler3"></div>
+            </div>
+        </div>
+    </div>
+    <!--MENU-->
+    <nav class="navigation ">
+        <div class="button-hide">
+            <button type="button" class="hideBuildings hideButton">Hide Buildings</button>
+            <button type="button" class="hideBatmobile hideButton">Hide Batmobile</button>
+            <button type="button" class="hideMoon hideButton">Hide Moon</button>
+            <button type="button" class="hideCloud hideButton">Hide Cloud</button>
+        </div>
+        <div class="open-menu"></div>
+        <div class="close-menu"><img src="images/closeMenu.png" alt="close menu"></div>
+    </nav>
     <script src="scripts/script.js"></script>
 </body>
 </html>
