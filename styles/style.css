@@ -75,10 +75,7 @@ body{
 
 /* color light in building : ef991d */
 
-.buildings{
-    position: absolute;
-    bottom: 200px;
-}
+/* Buildings */
 
 /* HIGHEST BUILDING IN GOTHAM */
 
@@ -313,12 +310,28 @@ body{
     background: #ef991d;
 }
 
+/* Animation buildings */
+
+.buildings{
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    animation-name: building-moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes building-moving{
+    100%{transform: translateX(-160vw)};
+}
+
 /* BATMOBILE */
 
 .batmobile{
     position: absolute;
     bottom: 180px;
-    left: 10px;
+    left: calc(50% - 180px);
 }
 
 .batmobile-construct{
@@ -766,6 +779,12 @@ body{
 
 /* Moon */
 
+.moon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 .moon-container{
     width: 100px;
     height: 100px;
@@ -774,10 +793,15 @@ body{
     position: relative;
 }
 
-.moon{
-    position: absolute;
-    top: 10px;
-    left: 10px;
+.moon-rolling{
+    animation-name: roll-moon;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes roll-moon{
+    100%{transform: rotate(360deg)};
 }
 
 .moon-dot0{
@@ -878,33 +902,49 @@ body{
 }
 
 .cloud1{
+    animation-delay: 0.1s;
     position: absolute;
     top: 50px;
-    left: 150px;
+    left: 10%;
 }
 
 .cloud2{
+    animation-delay: 0.2s;
     position: absolute;
-    top: 50px;
-    left: 320px;
+    top: 25px;
+    left: 27%;
 }
 
 .cloud3{
+    animation-delay: 0.1s;
     position: absolute;
-    top: 50px;
-    left: 490px;
+    top: 80px;
+    left: 45%;
 }
 
 .cloud4{
+    animation-delay: 0.3s;
     position: absolute;
     top: 50px;
-    left: 660px;
+    right: 25%;
 }
 
 .cloud5{
+    animation-delay: 0.1s;
     position: absolute;
-    top: 50px;
-    left: 830px;
+    top: 35px;
+    right: 8%;
+}
+
+.cloud-container .cloud{
+    animation-name: cloud-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-animation{
+    50%{transform: translateY(10px)};
 }
 
 /* Road */
@@ -916,7 +956,7 @@ body{
 }
 
 .road-container{
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background : #5E5F5F;
     display: flex;
