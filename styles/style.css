@@ -1243,8 +1243,10 @@ body{
     margin-top: calc(var(--height)/-2);
     margin-left: calc(var(--width)/-2);
     background: #FFF;
-    animation-fill-mode: both;
+}
 
+.equalizer-animation{
+    animation-fill-mode: both;
     animation-name: equalizer-bar;
     animation-duration: 1.3s;
     animation-iteration-count: infinite;

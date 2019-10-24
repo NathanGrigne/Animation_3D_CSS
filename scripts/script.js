@@ -90,14 +90,21 @@ batmobile.addEventListener('click',function(){
 
 const equalizer = document.querySelector('.equalizer')
 const themeBatman = document.querySelector('.theme-batman')
+const barEqualizer = document.querySelectorAll('.bar')
 let musicStatus = false
 
 equalizer.addEventListener('click',function(){
     if(musicStatus == false){
+        for(let i = 0; i < barEqualizer.length; i++){
+            barEqualizer[i].classList.add('equalizer-animation')
+        }
         themeBatman.play()
         musicStatus = true
     }
     else{
+        for(let i = 0; i < barEqualizer.length; i++){
+            barEqualizer[i].classList.remove('equalizer-animation')
+        }
         themeBatman.pause()
         musicStatus = false
     }
