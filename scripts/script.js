@@ -81,6 +81,8 @@ moon.addEventListener('click',function(){
         }
         musicStatus = false
         themeBatman.pause()
+        batmanSoundStatus = false
+        soundBatmobile.pause()
     }
     else{
         batSignal.classList.add('hide')
@@ -97,6 +99,8 @@ equalizer.addEventListener('click',function(){
         for(let i = 0; i < barEqualizer.length; i++){
             barEqualizer[i].classList.add('equalizer-animation')
         }
+        batmanSoundStatus = false
+        soundBatmobile.pause()
         themeBatman.play()
         musicStatus = true
     }
@@ -111,14 +115,21 @@ equalizer.addEventListener('click',function(){
 
 const soundBatmobile = document.querySelector('.sound-batmobile')
 const durationBatmobileSound = soundBatmobile.duration
-console.log(durationBatmobileSound)
+let batmanSoundStatus = false
 
 batmobile.addEventListener('click',function(){
-    soundBatmobile.play()
-    soundBatmobile.volume = 0.5
-    for(let i = 0; i < barEqualizer.length; i++){
-        barEqualizer[i].classList.remove('equalizer-animation')
+    if(batmanSoundStatus == false){
+        soundBatmobile.play()
+        soundBatmobile.volume = 0.5
+        for(let i = 0; i < barEqualizer.length; i++){
+            barEqualizer[i].classList.remove('equalizer-animation')
+        }
+        musicStatus = false
+        themeBatman.pause()
+        batmanSoundStatus = true
     }
-    musicStatus = false
-    themeBatman.pause()
+    else{
+        soundBatmobile.pause()
+        batmanSoundStatus = false
+    }
 })

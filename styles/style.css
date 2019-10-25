@@ -69,15 +69,11 @@ body{
     cursor: pointer;
 }
 
-/* color light in building : ef991d */
-
 /* Buildings */
 
 /* HIGHEST BUILDING IN GOTHAM */
 
 .highest{
-    position: absolute;
-    bottom: 0;
     height: 300px;
     width: 170px;
     display: flex;
@@ -87,9 +83,6 @@ body{
 }
 
 .highest-5{
-    position: absolute;
-    left: 860px;
-    bottom: 0;
     height: 300px;
     width: 170px;
     display: flex;
@@ -99,9 +92,6 @@ body{
 }
 
 .highest-7{
-    position: absolute;
-    left: 1260px;
-    bottom: 0;
     height: 300px;
     width: 170px;
     display: flex;
@@ -111,9 +101,6 @@ body{
 }
 
 .highest-8{
-    position: absolute;
-    left: 1460px;
-    bottom: 0;
     height: 300px;
     width: 170px;
     display: flex;
@@ -227,17 +214,11 @@ body{
 .high{
     height: 200px;
     width: 170px;
-    position: absolute;
-    bottom: 0;
-    left: 200px;
 }
 
 .high-6{
     height: 200px;
     width: 170px;
-    position: absolute;
-    bottom: 0;
-    left: 1060px;
 }
 
 .top-high-building{
@@ -327,9 +308,6 @@ body{
     height: 250px;
     width: 200px;
     background: #000;
-    position: absolute;
-    bottom: 0;
-    left: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,9 +317,6 @@ body{
     height: 250px;
     width: 200px;
     background: #000;
-    position: absolute;
-    bottom: 0;
-    left: 630px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -367,15 +342,76 @@ body{
 .buildings{
     position: absolute;
     bottom: 200px;
-    right: 0;
-    animation-name: building-moving;
-    animation-duration: 10s;
+    left: 0;
+    animation-name: building-moving-0;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes building-moving{
-    100%{transform: translateX(-160vw)};
+@keyframes building-moving-0{
+    100%{transform: translateX(-1460px)};
+}
+
+.buildings-background{
+    position: absolute;
+    bottom: 0;
+}
+
+.building-0{
+    left: 0;
+}
+
+.building-1{
+    left: 200px;
+}
+
+.building-2{
+    left: 400px;
+}
+
+.building-3{
+    left: 630px;
+}
+
+.building-4{
+    left: 860px;
+}
+
+.building-5{
+    left: 1060px;
+}
+
+.building-6{
+    left: 1260px;
+}
+
+.building-7{
+    left: 1460px;
+}
+
+.building-8{
+    left: 1660px;
+}
+
+.building-9{
+    left: 1860px;
+}
+
+.building-10{
+    left: 2090px;
+}
+
+.building-11{
+    left: 2320px;
+}
+
+.building-12{
+    left: 2520px;
+}
+
+.building-13{
+    left: 2720px;
 }
 
 /* BATMOBILE */
