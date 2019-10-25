@@ -110,6 +110,8 @@ equalizer.addEventListener('click',function(){
 })
 
 const soundBatmobile = document.querySelector('.sound-batmobile')
+const durationBatmobileSound = soundBatmobile.duration
+console.log(durationBatmobileSound)
 
 batmobile.addEventListener('click',function(){
     soundBatmobile.play()
