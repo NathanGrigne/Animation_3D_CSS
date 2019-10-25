@@ -140,7 +140,7 @@ moon.addEventListener('click',function(){
 const equalizer = document.querySelector('.equalizer')
 const themeBatman = document.querySelector('.theme-batman')
 const barEqualizer = document.querySelectorAll('.bar')
-let musicStatus = false
+let musicStatus = true
 
 //Sound on click equalizer
 
@@ -198,4 +198,8 @@ clickToPlay.addEventListener('click',function(){
     road.classList.remove('hide')
     batmobile.classList.remove('hide')
     equalizer.classList.remove('hide')
+    themeBatman.play()
+    for(let i = 0; i < barEqualizer.length; i++){
+        barEqualizer[i].classList.add('equalizer-animation')
+    }
 })
