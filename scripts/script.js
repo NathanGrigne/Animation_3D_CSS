@@ -184,3 +184,18 @@ batmobile.addEventListener('click',function(){
         batmanSoundStatus = false
     }
 })
+
+// Click to play
+
+const clickToPlay = document.querySelector('.click-to-play')
+const playMenu = document.querySelector('.play-menu')
+
+clickToPlay.addEventListener('click',function(){
+    playMenu.classList.add('hide')
+    moon.classList.remove('hide')
+    clouds.classList.remove('hide')
+    buildings.classList.remove('hide')
+    road.classList.remove('hide')
+    batmobile.classList.remove('hide')
+    equalizer.classList.remove('hide')
+})

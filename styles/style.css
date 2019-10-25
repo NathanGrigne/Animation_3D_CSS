@@ -5,6 +5,9 @@ body{
     overflow-y: hidden;
     margin: 0;
 }
+h1{
+    font-family: 'Roboto', sans-serif;
+}
 
 .yellow{
     background: yellow;
@@ -25,12 +28,78 @@ body{
 .play-menu{
     width: 100vw;
     height: 100vh;
-    background: #000;
+    background: #0000004D;
 }
 
-.play-menu img{
+.play-menu .video-intro{
+    height: 130vh;
+    position: absolute;
+    top: -15vh;
+    left: 0;
+}
+
+.click-to-play{
+    position: absolute;
+    top: 80%;
+    left: calc(50% - 110px);
+    color: #FFF;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.title-click{
+    opacity: 0.3;
+}
+
+.click-to-play:hover .title-click{
+    animation-name: title-click;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title-click{
+    100%{opacity: 1;}
+}
+
+.border-click-button{
+    width: 0px;
+    height: 1px;
+    background: #FFF;
+    opacity: 0.3;
+}
+
+
+.click-to-play:hover .border-click-button{
+    animation-name: border-click-to-play-animate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border-click-to-play-animate{
+    100%{width: 100%; opacity: 1}
+}
+
+.border-click-to-play1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.border-click-to-play2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.logo-batman-menu{
     width: 300px;
     height: auto;
+    position: absolute;
+    top: calc(50% - 143px);
+    left: calc(50% - 150px);
+    opacity: 0.3;
 }
 
 /* Menu */
