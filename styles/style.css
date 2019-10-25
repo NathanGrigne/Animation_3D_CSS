@@ -20,6 +20,19 @@ body{
     align-items: center;
 }
 
+/* Play menu */
+
+.play-menu{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+
+.play-menu img{
+    width: 300px;
+    height: auto;
+}
+
 /* Menu */
 
 .navigation{
@@ -39,6 +52,7 @@ body{
 
 .button-hide{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hideButton{

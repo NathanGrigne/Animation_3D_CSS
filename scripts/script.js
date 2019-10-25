@@ -10,6 +10,13 @@ const moon = document.querySelector('.moon')
 const buttonClouds = document.querySelector('.hideCloud')
 const clouds = document.querySelector('.clouds')
 
+const buttonRoad = document.querySelector('.hideRoad')
+const road = document.querySelector('.road')
+
+const buttonEqualizer = document.querySelector('.hideEqualizer')
+
+//button hide buildings
+
 buttonBuildings.addEventListener('click',function(){
     if(buildings.classList.contains('hide')){
         buildings.classList.remove('hide')
@@ -21,6 +28,7 @@ buttonBuildings.addEventListener('click',function(){
     }
 })
 
+//button hide batmobile
 
 buttonBatmobile.addEventListener('click',function(){
     if(batmobile.classList.contains('hide')){
@@ -33,6 +41,8 @@ buttonBatmobile.addEventListener('click',function(){
     }
 })
 
+//button hide moon
+
 buttonMoon.addEventListener('click',function(){
     if(moon.classList.contains('hide')){
         moon.classList.remove('hide')
@@ -43,6 +53,8 @@ buttonMoon.addEventListener('click',function(){
         buttonMoon.classList.add('yellow')
     }
 })
+
+//button hide clouds
 
 buttonClouds.addEventListener('click',function(){
     if(clouds.classList.contains('hide')){
@@ -55,8 +67,38 @@ buttonClouds.addEventListener('click',function(){
     }
 })
 
+//button hide road
+
+buttonRoad.addEventListener('click',function(){
+    if(road.classList.contains('hide')){
+        road.classList.remove('hide')
+        buttonRoad.classList.remove('yellow')
+    }
+    else{
+        road.classList.add('hide')
+        buttonRoad.classList.add('yellow')
+    }
+})
+
+//button hide equalizer
+
+buttonEqualizer.addEventListener('click',function(){
+    if(equalizer.classList.contains('hide')){
+        equalizer.classList.remove('hide')
+        buttonEqualizer.classList.remove('yellow')
+    }
+    else{
+        equalizer.classList.add('hide')
+        buttonEqualizer.classList.add('yellow')
+    }
+})
+
+//Menu editing
+
 const openMenu = document.querySelector('.open-menu')
 const navigation = document.querySelector('.navigation')
+
+//Open menu editing
 
 openMenu.addEventListener('click',function(){
     if(navigation.classList.contains('is-appear')){
@@ -67,9 +109,13 @@ openMenu.addEventListener('click',function(){
     }
 })
 
+//Sounds
+
 const hideBatSignal = document.querySelector('.moon')
 const batSignal = document.querySelector('.bat-signal')
 const soundBatSignal = document.querySelector('.sound-bat-signal')
+
+//sound on click moon
 
 moon.addEventListener('click',function(){
     if(batSignal.classList.contains('hide')){
@@ -89,10 +135,14 @@ moon.addEventListener('click',function(){
     }
 })
 
+//Equalizer
+
 const equalizer = document.querySelector('.equalizer')
 const themeBatman = document.querySelector('.theme-batman')
 const barEqualizer = document.querySelectorAll('.bar')
 let musicStatus = false
+
+//Sound on click equalizer
 
 equalizer.addEventListener('click',function(){
     if(musicStatus == false){
@@ -113,8 +163,9 @@ equalizer.addEventListener('click',function(){
     }
 })
 
+//Sound on click batmobile
+
 const soundBatmobile = document.querySelector('.sound-batmobile')
-const durationBatmobileSound = soundBatmobile.duration
 let batmanSoundStatus = false
 
 batmobile.addEventListener('click',function(){
