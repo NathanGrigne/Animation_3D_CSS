@@ -223,11 +223,21 @@ window.addEventListener('keydown',event =>{
         batmobile.classList.add('batmobile-moving')
 
         buildings.classList.remove('buildings-moving-inverse')
+        buildings.classList.remove('buildings-moving-fast')
         for(let x = 0; x < wheels.length; x++){
             wheels[x].classList.remove('roll-wheels-inverse')
         } 
         for(let e = 0; e < roadLine.length; e++){
             roadLine[e].classList.remove('road-line-moving-inverse')
+        }
+        for(let y = 0; y < roadLine.length; y++){
+            roadLine[y].classList.remove('road-line-moving-fast')
+        }
+    }
+    else if(event.keyCode === 16 && 39){
+        buildings.classList.add('buildings-moving-fast')
+        for(let y = 0; y < roadLine.length; y++){
+            roadLine[y].classList.add('road-line-moving-fast')
         }
     }
     else if(event.keyCode === 37){
@@ -241,11 +251,15 @@ window.addEventListener('keydown',event =>{
         batmobile.classList.add('batmobile-moving')
 
         buildings.classList.remove('buildings-moving')
+        buildings.classList.remove('buildings-moving-fast')
         for(let x = 0; x < wheels.length; x++){
             wheels[x].classList.remove('roll-wheels')
         } 
         for(let e = 0; e < roadLine.length; e++){
             roadLine[e].classList.remove('road-line-moving')
+        }
+        for(let y = 0; y < roadLine.length; y++){
+            roadLine[y].classList.remove('road-line-moving-fast')
         }
     }
 
@@ -258,9 +272,13 @@ window.addEventListener('keydown',event =>{
             roadLine[y].classList.remove('road-line-moving')
             roadLine[y].classList.remove('road-line-moving-inverse')
         }
+        for(let y = 0; y < roadLine.length; y++){
+            roadLine[y].classList.remove('road-line-moving-fast')
+        }
         batmobile.classList.remove('batmobile-moving')
         buildings.classList.remove('buildings-moving')
         buildings.classList.remove('buildings-moving-inverse')
+        buildings.classList.remove('buildings-moving-fast')
     }
 })
 
