@@ -220,14 +220,29 @@ window.addEventListener('keydown',event =>{
         buildings.classList.add('buildings-moving')
         batmobile.classList.add('batmobile-moving')
     }
+    else if(event.keyCode === 37){
+        for(let i = 0; i < wheels.length; i++){
+            wheels[i].classList.add('roll-wheels-inverse')
+        }
+        for(let y = 0; y < roadLine.length; y++){
+            roadLine[y].classList.add('road-line-moving-inverse')
+        }
+        buildings.classList.add('buildings-moving-inverse')
+        batmobile.classList.add('batmobile-moving')
+    }
+
     else{
         for(let i = 0; i < wheels.length; i++){
             wheels[i].classList.remove('roll-wheels')
+            wheels[i].classList.remove('roll-wheels-inverse')
         } 
         for(let y = 0; y < roadLine.length; y++){
             roadLine[y].classList.remove('road-line-moving')
+            roadLine[y].classList.remove('road-line-moving-inverse')
         }
         batmobile.classList.remove('batmobile-moving')
         buildings.classList.remove('buildings-moving')
+        buildings.classList.remove('buildings-moving-inverse')
     }
 })
+

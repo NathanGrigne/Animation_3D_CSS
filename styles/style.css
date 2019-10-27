@@ -445,15 +445,27 @@ h1{
 }
 
 .buildings.buildings-moving{
-    animation-name: building-moving-0;
+    animation-name: building-moving;
     animation-duration: 5.9s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes building-moving-0{
+.buildings.buildings-moving-inverse{
+    animation-name: building-moving-inverse;
+    animation-duration: 5.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes building-moving{
     100%{transform: translateX(-1260px)};
 }
+
+@keyframes building-moving-inverse{
+    100%{transform: translateX(1260px)};
+}
+
 
 .buildings-background{
     position: absolute;
@@ -461,55 +473,79 @@ h1{
 }
 
 .building-0{
-    left: 0;
+    left: -1230px;
 }
 
 .building-1{
-    left: 200px;
+    left: -1030px;
 }
 
 .building-2{
-    left: 400px;
+    left: -830px;
 }
 
 .building-3{
-    left: 630px;
+    left: -600px;
 }
 
 .building-4{
-    left: 860px;
+    left: -370px;
 }
 
 .building-5{
-    left: 1060px;
+    left: -170px;
 }
 
 .building-6{
-    left: 1260px;
+    left: 30px;
 }
 
 .building-7{
-    left: 1460px;
+    left: 230px;
 }
 
 .building-8{
-    left: 1660px;
+    left: 430px;
 }
 
 .building-9{
-    left: 1890px;
+    left: 660px;
 }
 
 .building-10{
-    left: 2120px;
+    left: 890px;
 }
 
 .building-11{
-    left: 2320px;
+    left: 1090px;
 }
 
 .building-12{
-    left: 2520px;
+    left: 1290px;
+}
+
+.building-13{
+    left: 1490px;
+}
+
+.building-14{
+    left: 1690px;
+}
+
+.building-15{
+    left: 1920px;
+}
+
+.building-16{
+    left: 2150px;
+}
+
+.building-17{
+    left: 2350px;
+}
+
+.building-18{
+    left: 2550px;
 }
 
 /* BATMOBILE */
@@ -690,10 +726,21 @@ h1{
     animation-timing-function: linear;
 }
 
+.wheels.roll-wheels-inverse{
+    animation-name: roll-wheels-inverse;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 /* Animation Wheels */
 
 @keyframes roll-wheels{
     100%{transform: rotate(360deg);}
+}
+
+@keyframes roll-wheels-inverse{
+    100%{transform: rotate(-360deg);}
 }
 
 .around-front-wheel{
@@ -1330,8 +1377,24 @@ h1{
     animation-timing-function: linear;
 }
 
+.road-line.road-line-moving-inverse{
+    animation-name: road-line-moving-inverse;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
 @keyframes road-line-moving{
     100%{transform: translateX(-200%);}
+}
+
+@keyframes road-line-moving-inverse{
+    100%{transform: translateX(200%);}
+}
+
+.road-line-18{
+    left: calc(-7% + 1.5vw);
 }
 
 .road-line-0{
