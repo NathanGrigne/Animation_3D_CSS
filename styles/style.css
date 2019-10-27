@@ -507,6 +507,14 @@ h1{
     left: -370px;
 }
 
+.donkey-kong{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: -460px;
+    left: -630px;
+}
+
 .building-5{
     left: -170px;
 }
@@ -521,6 +529,14 @@ h1{
 
 .building-8{
     left: 430px;
+}
+
+.donkey-kong-2{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: -460px;
+    left: 1660px;
 }
 
 .building-9{
@@ -1321,6 +1337,7 @@ h1{
     position: absolute;
     top: 50px;
     left: 10%;
+    cursor: pointer;
 }
 
 .cloud2{

@@ -282,3 +282,11 @@ window.addEventListener('keydown',event =>{
     }
 })
 
+// AAAH
+
+const cloud1 = document.querySelector('.cloud1')
+const soundScream = document.querySelector('.sound-scream')
+
+cloud1.addEventListener('click',function(){
+    soundScream.play()
+})
