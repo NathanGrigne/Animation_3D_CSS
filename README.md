@@ -8,6 +8,7 @@ Sur ce site vous pouvez :
   -Cliquez sur la batmobile pour lancer une musique
   -Lancer ou mettre en pause la musique en cliquant sur l'equalizer
   -Vous pouvez lancer les animations en appuyant sur la flèche de droite
+  -Vous pouvez donner un boost en appuyant sur shift
  
 This site is created as part of a school project. It is composed exclusively of HTML | CSS | JS. I had to create a site with a maximum of css, based on animation. The site must be optimized to run at 60fps.
 
@@ -17,3 +18,4 @@ On this site you can:
   -Click on the batmobile to start a music
   -Start or pause the music by clicking on the equalizer
   -You can start the animations by pressing the right arrow
+  -You can boost by pressing shift
