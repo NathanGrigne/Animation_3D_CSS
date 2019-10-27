@@ -214,18 +214,20 @@ window.addEventListener('keydown',event =>{
         for(let i = 0; i < wheels.length; i++){
             wheels[i].classList.add('roll-wheels')
         }
-        buildings.classList.add('buildings-moving')
         for(let y = 0; y < roadLine.length; y++){
             roadLine[y].classList.add('road-line-moving')
         }
+        buildings.classList.add('buildings-moving')
+        batmobile.classList.add('batmobile-moving')
     }
     else{
         for(let i = 0; i < wheels.length; i++){
             wheels[i].classList.remove('roll-wheels')
         } 
-        buildings.classList.remove('buildings-moving')
         for(let y = 0; y < roadLine.length; y++){
             roadLine[y].classList.remove('road-line-moving')
         }
+        batmobile.classList.remove('batmobile-moving')
+        buildings.classList.remove('buildings-moving')
     }
 })

@@ -93,13 +93,27 @@ h1{
     left: 0;
 }
 
-.logo-batman-menu{
+.logo-batman-menu-container{
     width: 300px;
-    height: auto;
+    height: 207px;
+    background: url('../images/logoWhiteBatman.png');
+    background-size: cover;
+    background-position: center;
     position: absolute;
+    opacity: 0.3;
     top: calc(50% - 143px);
     left: calc(50% - 150px);
-    opacity: 0.3;
+}
+
+.click-to-play:hover + .logo-batman-menu-container{
+    animation-name: logo-batman-animate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo-batman-animate{
+    100%{opacity: 0.7;}
 }
 
 /* Menu */
@@ -1086,7 +1100,9 @@ h1{
     position: absolute;
     bottom: 190px;
     left: calc(50% - 150px);
+}
 
+.batmobile.batmobile-moving{
     animation-name: batmobile-moving;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -1315,7 +1331,6 @@ h1{
 @keyframes road-line-moving{
     100%{transform: translateX(-200%);}
 }
-
 
 .road-line-0{
     left: calc(-1% + 1.5vw);
