@@ -28,7 +28,9 @@ h1{
 .play-menu{
     width: 100vw;
     height: 100vh;
-    background: #0000004D;
+    background: url('../images/backgroundPlayMenu.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .play-menu .video-intro{
