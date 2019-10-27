@@ -189,8 +189,10 @@ batmobile.addEventListener('click',function(){
 
 const clickToPlay = document.querySelector('.click-to-play')
 const playMenu = document.querySelector('.play-menu')
+const body = document.querySelector('body')
 
 clickToPlay.addEventListener('click',function(){
+    body.classList.add('background-gradient')
     playMenu.classList.add('hide')
     moon.classList.remove('hide')
     clouds.classList.remove('hide')
@@ -219,6 +221,14 @@ window.addEventListener('keydown',event =>{
         }
         buildings.classList.add('buildings-moving')
         batmobile.classList.add('batmobile-moving')
+
+        buildings.classList.remove('buildings-moving-inverse')
+        for(let x = 0; x < wheels.length; x++){
+            wheels[x].classList.remove('roll-wheels-inverse')
+        } 
+        for(let e = 0; e < roadLine.length; e++){
+            roadLine[e].classList.remove('road-line-moving-inverse')
+        }
     }
     else if(event.keyCode === 37){
         for(let i = 0; i < wheels.length; i++){
@@ -229,6 +239,14 @@ window.addEventListener('keydown',event =>{
         }
         buildings.classList.add('buildings-moving-inverse')
         batmobile.classList.add('batmobile-moving')
+
+        buildings.classList.remove('buildings-moving')
+        for(let x = 0; x < wheels.length; x++){
+            wheels[x].classList.remove('roll-wheels')
+        } 
+        for(let e = 0; e < roadLine.length; e++){
+            roadLine[e].classList.remove('road-line-moving')
+        }
     }
 
     else{
