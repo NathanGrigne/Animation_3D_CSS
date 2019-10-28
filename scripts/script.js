@@ -186,23 +186,8 @@ window.addEventListener('keydown',event =>{
         }
         buildings.classList.add('buildings-moving')
         batmobile.classList.add('batmobile-moving')
-
-        buildings.classList.remove('buildings-moving-inverse')
-        buildings.classList.remove('buildings-moving-fast')
-        for(let x = 0; x < wheels.length; x++){
-            wheels[x].classList.remove('roll-wheels-inverse')
-        } 
-        for(let e = 0; e < roadLine.length; e++){
-            roadLine[e].classList.remove('road-line-moving-inverse')
-        }
-        for(let y = 0; y < roadLine.length; y++){
-            roadLine[y].classList.remove('road-line-moving-fast')
-        }
-        for(let j = 0; j < wheels.length; j++){
-            wheels[j].classList.remove('roll-wheels-fast')
-        }
     }
-    else if(event.keyCode === 16 && 39){
+    else if(event.keyCode === 16 && event.keyCode === 39){
         buildings.classList.add('buildings-moving-fast')
         for(let y = 0; y < roadLine.length; y++){
             roadLine[y].classList.add('road-line-moving-fast')
@@ -220,15 +205,22 @@ window.addEventListener('keydown',event =>{
         }
         buildings.classList.add('buildings-moving-inverse')
         batmobile.classList.add('batmobile-moving')
+    }
+})
 
-        buildings.classList.remove('buildings-moving')
-        buildings.classList.remove('buildings-moving-fast')
-        for(let x = 0; x < wheels.length; x++){
-            wheels[x].classList.remove('roll-wheels')
-        } 
-        for(let e = 0; e < roadLine.length; e++){
-            roadLine[e].classList.remove('road-line-moving')
+window.addEventListener('keyup',(event) =>{
+    if(event.keyCode === 39){
+        for(let i = 0; i < wheels.length; i++){
+            wheels[i].classList.remove('roll-wheels')
         }
+        for(let y = 0; y < roadLine.length; y++){
+            roadLine[y].classList.remove('road-line-moving')
+        }
+        buildings.classList.remove('buildings-moving')
+        batmobile.classList.remove('batmobile-moving')
+    }
+    else if(event.keyCode === 16 && event.keyCode === 39){
+        buildings.classList.remove('buildings-moving-fast')
         for(let y = 0; y < roadLine.length; y++){
             roadLine[y].classList.remove('road-line-moving-fast')
         }
@@ -236,25 +228,14 @@ window.addEventListener('keydown',event =>{
             wheels[i].classList.remove('roll-wheels-fast')
         }
     }
-
-    else{
+    else if(event.keyCode === 37){
         for(let i = 0; i < wheels.length; i++){
-            wheels[i].classList.remove('roll-wheels')
             wheels[i].classList.remove('roll-wheels-inverse')
-        } 
+        }
         for(let y = 0; y < roadLine.length; y++){
-            roadLine[y].classList.remove('road-line-moving')
             roadLine[y].classList.remove('road-line-moving-inverse')
         }
-        for(let x = 0; x < roadLine.length; x++){
-            roadLine[x].classList.remove('road-line-moving-fast')
-        }
-        for(let j = 0; j < wheels.length; j++){
-            wheels[j].classList.remove('roll-wheels-fast')
-        }
-        batmobile.classList.remove('batmobile-moving')
-        buildings.classList.remove('buildings-moving')
         buildings.classList.remove('buildings-moving-inverse')
-        buildings.classList.remove('buildings-moving-fast')
+        batmobile.classList.remove('batmobile-moving')
     }
 })
