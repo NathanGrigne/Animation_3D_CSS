@@ -1426,6 +1426,10 @@ h1{
     animation-timing-function: linear;
 }
 
+.road-line.road-line-moving-pause{
+    animation-name: road-line-moving-pause;
+    animation-play-state: paused
+}
 
 @keyframes road-line-moving{
     100%{transform: translateX(-200%);}

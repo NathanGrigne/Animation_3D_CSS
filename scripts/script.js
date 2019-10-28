@@ -187,7 +187,7 @@ window.addEventListener('keydown',event =>{
         buildings.classList.add('buildings-moving')
         batmobile.classList.add('batmobile-moving')
     }
-    else if(event.keyCode === 16 && event.keyCode === 39){
+    else if(event.keyCode === 16 && 39){
         buildings.classList.add('buildings-moving-fast')
         for(let y = 0; y < roadLine.length; y++){
             roadLine[y].classList.add('road-line-moving-fast')
@@ -219,7 +219,7 @@ window.addEventListener('keyup',(event) =>{
         buildings.classList.remove('buildings-moving')
         batmobile.classList.remove('batmobile-moving')
     }
-    else if(event.keyCode === 16 && event.keyCode === 39){
+    else if(event.keyCode === 16 && 39){
         buildings.classList.remove('buildings-moving-fast')
         for(let y = 0; y < roadLine.length; y++){
             roadLine[y].classList.remove('road-line-moving-fast')
