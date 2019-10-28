@@ -143,7 +143,7 @@ batmobile.addEventListener('click',function(){
 const cloud2 = document.querySelector('.cloud2')
 const soundScream = document.querySelector('.sound-scream')
 
-cloud1.addEventListener('click',function(){
+cloud2.addEventListener('click',function(){
     soundScream.play()
     themeBatman.pause()
     soundBatmobile.pause()
