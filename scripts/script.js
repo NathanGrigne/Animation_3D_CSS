@@ -18,79 +18,37 @@ const buttonEqualizer = document.querySelector('.hideEqualizer')
 //button hide buildings
 
 buttonBuildings.addEventListener('click',function(){
-    if(buildings.classList.contains('hide')){
-        buildings.classList.remove('hide')
-        buttonBuildings.classList.remove('yellow')
-    }
-    else{
-        buildings.classList.add('hide')
-        buttonBuildings.classList.add('yellow')
-    }
+    buildings.classList.toggle('hide')
 })
 
 //button hide batmobile
 
 buttonBatmobile.addEventListener('click',function(){
-    if(batmobile.classList.contains('hide')){
-        batmobile.classList.remove('hide')
-        buttonBatmobile.classList.remove('yellow')
-    }
-    else{
-        batmobile.classList.add('hide')
-        buttonBatmobile.classList.add('yellow')
-    }
+    batmobile.classList.toggle('hide')
 })
 
 //button hide moon
 
 buttonMoon.addEventListener('click',function(){
-    if(moon.classList.contains('hide')){
-        moon.classList.remove('hide')
-        buttonMoon.classList.remove('yellow')
-    }
-    else{
-        moon.classList.add('hide')
-        buttonMoon.classList.add('yellow')
-    }
+    moon.classList.toggle('hide')
 })
 
 //button hide clouds
 
 buttonClouds.addEventListener('click',function(){
-    if(clouds.classList.contains('hide')){
-        clouds.classList.remove('hide')
-        buttonClouds.classList.remove('yellow')
-    }
-    else{
-        clouds.classList.add('hide')
-        buttonClouds.classList.add('yellow')
-    }
+    clouds.classList.toggle('hide')
 })
 
 //button hide road
 
 buttonRoad.addEventListener('click',function(){
-    if(road.classList.contains('hide')){
-        road.classList.remove('hide')
-        buttonRoad.classList.remove('yellow')
-    }
-    else{
-        road.classList.add('hide')
-        buttonRoad.classList.add('yellow')
-    }
+    road.classList.toggle('hide')
 })
 
 //button hide equalizer
 
 buttonEqualizer.addEventListener('click',function(){
-    if(equalizer.classList.contains('hide')){
-        equalizer.classList.remove('hide')
-        buttonEqualizer.classList.remove('yellow')
-    }
-    else{
-        equalizer.classList.add('hide')
-        buttonEqualizer.classList.add('yellow')
-    }
+    equalizer.classList.toggle('hide')
 })
 
 //Menu editing
@@ -101,12 +59,7 @@ const navigation = document.querySelector('.navigation')
 //Open menu editing
 
 openMenu.addEventListener('click',function(){
-    if(navigation.classList.contains('is-appear')){
-        navigation.classList.remove('is-appear')
-    }
-    else{
-        navigation.classList.add('is-appear')
-    }
+    navigation.classList.toggle('is-appear')
 })
 
 //Sounds
@@ -282,7 +235,7 @@ window.addEventListener('keydown',event =>{
     }
 })
 
-// AAAH
+//Sound scream
 
 const cloud1 = document.querySelector('.cloud1')
 const soundScream = document.querySelector('.sound-scream')
