@@ -138,6 +138,18 @@ batmobile.addEventListener('click',function(){
     }
 })
 
+//Sound scream
+
+const cloud2 = document.querySelector('.cloud2')
+const soundScream = document.querySelector('.sound-scream')
+
+cloud1.addEventListener('click',function(){
+    soundScream.play()
+    themeBatman.pause()
+    soundBatmobile.pause()
+    soundBatSignal.pause()
+})
+
 // Click to play
 
 const clickToPlay = document.querySelector('.click-to-play')
@@ -245,13 +257,4 @@ window.addEventListener('keydown',event =>{
         buildings.classList.remove('buildings-moving-inverse')
         buildings.classList.remove('buildings-moving-fast')
     }
-})
-
-//Sound scream
-
-const cloud1 = document.querySelector('.cloud1')
-const soundScream = document.querySelector('.sound-scream')
-
-cloud1.addEventListener('click',function(){
-    soundScream.play()
 })

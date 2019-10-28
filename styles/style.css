@@ -1340,7 +1340,6 @@ h1{
     position: absolute;
     top: 50px;
     left: 10%;
-    cursor: pointer;
 }
 
 .cloud2{
@@ -1348,6 +1347,7 @@ h1{
     position: absolute;
     top: 25px;
     left: 27%;
+    cursor: pointer;
 }
 
 .cloud3{
