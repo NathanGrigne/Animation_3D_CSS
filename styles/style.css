@@ -756,6 +756,13 @@ h1{
     animation-timing-function: linear;
 }
 
+.wheels.roll-wheels-fast{
+    animation-name: roll-wheels-fast;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 /* Animation Wheels */
 
 @keyframes roll-wheels{
@@ -764,6 +771,10 @@ h1{
 
 @keyframes roll-wheels-inverse{
     100%{transform: rotate(-360deg);}
+}
+
+@keyframes roll-wheels-fast{
+    100%{transform: rotate(360deg);}
 }
 
 .around-front-wheel{
