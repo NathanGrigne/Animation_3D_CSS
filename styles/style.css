@@ -1354,42 +1354,46 @@ h1{
 
 /* Cloud */
 
-.cloud-container img{
+.cloud1{
     width: 150px;
     height: auto;
-}
-
-.cloud1{
-    animation-delay: 0.1s;
     position: absolute;
     top: 50px;
     left: 10%;
+    animation-delay: 0.1s;
 }
 
 .cloud2{
-    animation-delay: 0.2s;
+    width: 187px;
+    height: auto;
     position: absolute;
     top: 25px;
     left: 27%;
+    animation-delay: 0.4s;
     cursor: pointer;
 }
 
 .cloud3{
-    animation-delay: 0.1s;
+    width: 90px;
+    height: auto;
     position: absolute;
     top: 80px;
     left: 45%;
+    animation-delay: 0.7s;
 }
 
 .cloud4{
-    animation-delay: 0.3s;
+    width: 150px;
+    height: auto;
     position: absolute;
     top: 50px;
-    right: 25%;
+    right: 30%;
+    animation-delay: 0.3s;
 }
 
 .cloud5{
-    animation-delay: 0.1s;
+    width: 234px;
+    height: auto;
     position: absolute;
     top: 35px;
     right: 8%;
@@ -1397,13 +1401,13 @@ h1{
 
 .cloud-container .cloud{
     animation-name: cloud-animation;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes cloud-animation{
-    50%{transform: translateY(10px)};
+    50%{transform: translateY(20px)};
 }
 
 /* Road */
