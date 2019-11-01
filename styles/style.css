@@ -469,6 +469,18 @@ h1{
     animation-timing-function: linear;
 }
 
+.buildings.buildings-moving-paused{
+    animation-play-state: paused;
+}
+
+.buildings.buildings-moving-fast-paused{
+    animation-play-state: paused;
+}
+
+.buildings.buildings-moving-inverse-paused{
+    animation-play-state: paused;
+}
+
 @keyframes building-moving{
     100%{transform: translateX(-1260px)};
 }
@@ -761,6 +773,18 @@ h1{
     animation-duration: 200ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+.wheels.roll-wheels-paused{
+    animation-play-state: paused;
+}
+
+.wheels.roll-wheels-fast-paused{
+    animation-play-state: paused;
+}
+
+.wheels.roll-wheels-inverse-paused{
+    animation-play-state: paused;
 }
 
 /* Animation Wheels */
@@ -1416,11 +1440,11 @@ h1{
     animation-play-state: paused;
 }
 
-.road-line.road-line-moving.road-line-moving-fast-paused{
+.road-line.road-line-moving-fast.road-line-moving-fast-paused{
     animation-play-state: paused;
 }
 
-.road-line.road-line-moving.road-line-moving-inverse-paused{
+.road-line.road-line-moving-inverse.road-line-moving-inverse-paused{
     animation-play-state: paused;
 }
 
@@ -1436,11 +1460,6 @@ h1{
     animation-duration: 0.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
-
-.road-line.road-line-moving-pause{
-    animation-name: road-line-moving-pause;
-    animation-play-state: paused
 }
 
 @keyframes road-line-moving{
