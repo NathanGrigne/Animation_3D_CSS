@@ -1216,6 +1216,10 @@ h1{
     animation-timing-function: linear;
 }
 
+.batmobile.batmobile-moving-paused{
+    animation-play-state: paused;
+}
+
 @keyframes batmobile-moving{
     50%{transform: translateY(10px)};
 }
